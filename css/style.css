@@ -248,6 +248,8 @@ body.dark {
     flex: 1;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 1em;
-    background: transparent;
+    background: url(../media/BoobyMiata.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     backdrop-filter: blur(40px);
 }
