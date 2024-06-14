@@ -5,14 +5,12 @@ const togglebtn = document.querySelector('.toggle-btn');
 const body = document.querySelector('body'); // Selects the <body> tag
 const list = document.querySelector('.list');
 const logo = document.querySelector('.logo');
-const bento = document.querySelector('.container')
 
 
 // Sidebar Toggle
 
 togglebtn.addEventListener('click', () => {
     sidebar.classList.toggle('active');
-    bento.classList.toggle('active')
 });
 
 
