@@ -6,9 +6,15 @@ const body = document.querySelector('body'); // Selects the <body> tag
 const list = document.querySelector('.list');
 const logo = document.querySelector('.logo');
 
+
+// Sidebar Toggle
+
 togglebtn.addEventListener('click', () => {
     sidebar.classList.toggle('active');
 });
+
+
+// Dark Mode Toggle
 
 function applyDarkMode(isDark) {
     if (isDark) {
@@ -28,11 +34,6 @@ function applyDarkMode(isDark) {
     }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    const isDarkMode = localStorage.getItem('darkmode') === 'true';
-    applyDarkMode(isDarkMode);
-});
-
 darkmodeButton.addEventListener('click', () => {
     const isDark = body.classList.toggle('dark');
     togglebtn.classList.toggle('dark');
@@ -43,4 +44,12 @@ darkmodeButton.addEventListener('click', () => {
     applyDarkMode(isDark);
 
     localStorage.setItem('darkmode', isDark);
+});
+
+
+// Local Storage
+
+window.addEventListener('DOMContentLoaded', () => {
+    const isDarkMode = localStorage.getItem('darkmode') === 'true';
+    applyDarkMode(isDarkMode);
 });

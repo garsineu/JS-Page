@@ -7,18 +7,25 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background: #fbfada no-repeat;
+    background: url(../media/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 body.dark {
+    display: flex;
     min-height: 100vh;
-    background: #12372a no-repeat;
+    background: url(../media/background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+
+/* Sidebar */
 
 .sidebar {
     position: fixed;
@@ -157,4 +164,86 @@ body.dark {
     opacity: 1;
     pointer-events: auto;
     transition-delay: calc(.1s * var(--i));
+}
+
+
+/* Bento Grid */
+
+.container{
+    width: 1000px;
+    height: 700px;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border-radius: 1em;
+    gap: 1em;
+}
+
+.row1{
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.row2{
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.row3{
+    display: flex;
+    gap: 1em;
+    flex: 1;
+    border-radius: 1em;
+}
+
+.row3col1{
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.row3col2{
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.item2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 1em;
+    gap: 1em;
+}
+
+.item2row1{
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.item2row2{
+    flex: 1;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 1em;
+    background: transparent;
+    backdrop-filter: blur(40px);
 }
