@@ -39,6 +39,7 @@ body.dark {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     padding: 6px 14px;
     transition: .5s;
+    z-index: 1;
 }
 
 .sidebar.active {
@@ -170,11 +171,14 @@ body.dark {
 /* Bento Grid */
 
 .container{
+    display: flex;
     width: 1000px;
     height: 700px;
-    padding: 1em;
-    display: flex;
+    margin-left: 80px;
     gap: 1em;
+    transition: .5s;
+    align-self: center;
+    z-index: 0;
 }
 
 .item1{
