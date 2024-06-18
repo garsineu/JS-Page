@@ -112,7 +112,6 @@ body.dark {
     flex-direction: column;
     margin-top: 10px;
 }
-
 .list .list-item {
     display: flex;
     flex-direction: column;
@@ -142,10 +141,11 @@ body.dark {
     border-radius: 6px;
     white-space: nowrap;
     transition: .5s;
+    box-sizing: border-box;
 }
 
 .list .list-item.active a, .list .list-item a:hover {
-    background: rgba(255, 255, 255, .2); 
+    background: rgba(255, 255, 255, .2);
 }
 
 .list .list-item a i {
